@@ -4,19 +4,49 @@
     "description": "Assignment 2 for backend engineering launchpad",
     "main": "index.js",
     "scripts": {
-      "pretest": "node -e \"if (process.version.slice(1).split('.')[0] < 18) { console.error('Unsupported Node.js version, please use version 18'); process.exit(1); }\"",
-      "test": "tap test/*.js --disable-coverage"
+        "start": "node src/app.js",
+        "dev": "nodemon src/app.js",
+        "test": "jest"
     },
     "author": "Airtribe",
     "license": "ISC",
     "devDependencies": {
-      "supertest": "^6.3.4",
-      "tap": "^18.6.1"
+        "cross-env": "^10.0.0",
+        "jest": "^30.0.5",
+        "nodemon": "^3.1.10",
+        "supertest": "^6.3.4",
+        "tap": "^18.6.1"
     },
     "dependencies": {
-      "express": "^4.18.2"
+        "axios": "^1.11.0",
+        "bcrypt": "^6.0.0",
+        "bcryptjs": "^3.0.2",
+        "cors": "^2.8.5",
+        "dotenv": "^17.2.1",
+        "express": "^4.21.2",
+        "express-validator": "^7.2.1",
+        "jsonwebtoken": "^9.0.2",
+        "lowdb": "^7.0.1",
+        "morgan": "^1.10.1",
+        "nanoid": "^5.1.5",
+        "node-cache": "^5.1.2",
+        "pino": "^9.9.0",
+        "pino-pretty": "^13.1.1"
     },
     "engines": {
-      "node": ">= 18.0.0"
-    }
+        "node": ">= 18.0.0"
+    },
+    "directories": {
+        "test": "test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/airtribe-projects/news-aggregator-api-SSaiPranay.git"
+    },
+    "keywords": [],
+    "type": "module",
+    "bugs": {
+        "url": "https://github.com/airtribe-projects/news-aggregator-api-SSaiPranay/issues"
+    },
+    "homepage": "https://github.com/airtribe-projects/news-aggregator-api-SSaiPranay#readme"
 }
